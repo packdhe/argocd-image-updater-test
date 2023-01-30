@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - asia.gcr.io/ocean-solution/test/nginx@sha256:7250923ba3543110040462388756ef099331822c6172a050b12c7a38361ea46f
