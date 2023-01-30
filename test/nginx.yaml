@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: asia-southeast2-docker.pkg.dev/ocean-solution/test/nginx:latest
+        image: asia.gcr.io/ocean-solution/test/nginx:latest
         ports:
         - containerPort: 80
       imagePullSecrets:
