@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: argocd
 spec:
   selector:
     matchLabels:
@@ -17,3 +18,5 @@ spec:
         image: asia-southeast2-docker.pkg.dev/ocean-solution/test/nginx:1.14.2
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: argocd-gcr-secret
